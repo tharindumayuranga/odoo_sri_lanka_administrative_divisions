@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+sri_lanka_administrative_divisions.access_ad_provinces,access_ad_provinces,sri_lanka_administrative_divisions.model_ad_provinces,base.group_user,1,0,0,0
+sri_lanka_administrative_divisions.access_ad_districts,access_ad_districts,sri_lanka_administrative_divisions.model_ad_districts,base.group_user,1,0,0,0
+sri_lanka_administrative_divisions.access_ad_cities,access_ad_cities,sri_lanka_administrative_divisions.model_ad_cities,base.group_user,1,0,0,0

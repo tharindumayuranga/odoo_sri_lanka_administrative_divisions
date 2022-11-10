@@ -1,0 +1,48 @@
+ <odoo>
+  <data>
+
+       <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="ad_cities_list">
+      <field name="name">Cities list</field>
+      <field name="model">ad.cities</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="districts_id"/>
+        </tree>
+      </field>
+    </record>
+    
+    
+       <!-- explicit form view definition -->
+    
+   <record model="ir.ui.view" id="ad_cities_form">
+      <field name="name">Cities form</field>
+      <field name="model">ad.cities</field>
+      <field name="arch" type="xml">
+      <form string="Cities">
+        <sheet>
+          <group>
+            <group>
+              <field name="districts_id"/>
+              <field name="name"/>
+            </group>
+          </group>
+        </sheet>
+      </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="ad_cities_action">
+      <field name="name">Cities</field>
+      <field name="res_model">ad.cities</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+  </data>
+</odoo>

@@ -1,0 +1,48 @@
+ <odoo>
+  <data>
+
+       <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="ad_districts_list">
+      <field name="name">Districts list</field>
+      <field name="model">ad.districts</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="province_id"/>
+        </tree>
+      </field>
+    </record>
+    
+    
+       <!-- explicit form view definition -->
+    
+   <record model="ir.ui.view" id="ad_districts_form">
+      <field name="name">Districts form</field>
+      <field name="model">ad.districts</field>
+      <field name="arch" type="xml">
+      <form string="Districts">
+        <sheet>
+          <group>
+            <group>
+              <field name="province_id"/>
+              <field name="name"/>
+            </group>
+          </group>
+        </sheet>
+      </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="ad_districts_action">
+      <field name="name">Districts</field>
+      <field name="res_model">ad.districts</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+  </data>
+</odoo>

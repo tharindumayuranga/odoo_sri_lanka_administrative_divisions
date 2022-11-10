@@ -1,0 +1,15 @@
+<odoo>
+  <data>
+  
+  
+    <menuitem name="SL Administrative Divisions" id="ad_divisions_menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Provinces" id="provinces_menu_1" parent="ad_divisions_menu_root" action="ad_provinces_action"/>
+    <menuitem name="Districts" id="district_menu_1" parent="ad_divisions_menu_root" action="ad_districts_action"/>
+    <menuitem name="Cities" id="cities_menu_1" parent="ad_divisions_menu_root" action="ad_cities_action"/>
+    
+
+  </data>
+</odoo>

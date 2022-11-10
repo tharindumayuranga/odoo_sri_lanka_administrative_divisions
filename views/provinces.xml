@@ -1,0 +1,32 @@
+ <odoo>
+  <data>
+
+    
+   <record model="ir.ui.view" id="ad_provinces_form">
+      <field name="name">Provinces form</field>
+      <field name="model">ad.provinces</field>
+      <field name="arch" type="xml">
+      <form string="Province">
+        <sheet>
+          <group>
+            <group>
+              <field name="name"/>
+            </group>
+          </group>
+        </sheet>
+      </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="ad_provinces_action">
+      <field name="name">Provinces</field>
+      <field name="res_model">ad.provinces</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+  </data>
+</odoo>
